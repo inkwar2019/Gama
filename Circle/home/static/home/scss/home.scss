@@ -1,0 +1,116 @@
+@import 'fonts';
+@import 'colors';
+@import 'sizes';
+@import 'paging';
+
+
+.title {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $sub-heading-size;
+    font-family: $heading-font;
+    color: $text-color;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px  $primary-color-dark;
+}
+.post-box {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .post {
+        position: relative;
+        height: 300px;
+        width: 700px;
+        margin: 100px;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s linear; 
+        
+        &--title {
+            flex: 1;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $heading-font;
+            font-size: $sub-heading-size;
+            text-align: center;
+            color: $text-color;
+            transition: all 0.3s linear;
+            &:hover {
+                text-shadow: 0 0 15px $text-color;
+            }
+        }
+        &--body {
+            position: relative;
+            width: 100%;
+            flex: 6;
+            display: flex;
+            align-items: center;
+            .post-image {
+                flex: 1;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    height: 250px;
+                    width: 250px;
+                    border-radius: 10000px;
+                    border: 5px solid $primary-color;
+                    transition: all 0.3s linear;
+                    &:hover {
+                        box-shadow: 0 0 10px $primary-color;
+                    }
+                }
+            }
+            .post--status{
+                flex: 1;
+                height: 100%;
+                padding:5px 5px 5px 30px;
+                background-color:rgba($primary-color-dark,0.9);
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                border: 2px solid $primary-color-light;
+                .post--desc {
+                    font-family: $article-font;
+                    font-size: $article-size;
+                    padding-bottom: 10px;
+                }
+                .price {
+                    font-family: $article-font;
+                    font-size: $small-text;
+                    color: $highlight-color;
+                    .discount {
+                        color: $danger-color;
+                    }
+                }
+                .post--author {
+                    font-family: $article-font;
+                    font-size: $small-text;
+                    color: $highlight-color;
+                    a{
+                        text-decoration: none;
+
+                    }
+                }
+                &--date {
+                    font-family: $article-font;
+                    font-size: $small-text;
+                    color: $highlight-color;
+                }
+            }
+        }
+    }
+}

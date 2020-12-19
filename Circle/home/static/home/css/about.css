@@ -1,0 +1,67 @@
+.form {
+  position: relative;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  min-height: 600px;
+}
+
+.form-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: #ededed;
+}
+
+.form-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.form-image img {
+  height: 200px;
+  border: 2px solid #ededed;
+  border-radius: 1000px;
+}
+
+.form-desc {
+  padding: 50px 50px 50px 100px;
+  width: 100%;
+  background-color: rgba(32, 27, 34, 0.9);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.form-desc h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: #ededed;
+}
+
+.form-desc h1 span {
+  color: #d49625;
+}
+
+.form-desc h2 {
+  font-family: "Andika New Basic", sans-serif;
+  font-size: 18px;
+  color: #ededed;
+}
+
+.form-desc h2 span {
+  color: #d49625;
+}

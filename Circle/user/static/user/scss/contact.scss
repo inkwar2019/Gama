@@ -1,0 +1,18 @@
+@import 'home/scss/colors';
+@import 'home/scss/fonts';
+@import 'home/scss/sizes';
+@import 'home/scss/forms';
+@import 'home/scss/buttons';
+
+.form {
+    min-height: 600px;
+    .m-form {
+        width: 100%;
+        padding: 50px 50px 50px 100px;
+        background-color: rgba($primary-color-dark,0.5);
+        font-size: $article-size;
+        a{
+            display: block;
+        }
+    }
+}

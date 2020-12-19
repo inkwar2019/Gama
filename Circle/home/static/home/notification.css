@@ -1,0 +1,72 @@
+.home-section{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.notification-box{
+  position: relative;
+  width: 60%;
+  padding: 2px;
+  background-color:#00bff1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.notification{
+  width: 100%;
+  min-height: 100px;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 10px 10px 10px 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.notification h1 a{
+  text-decoration: none;
+}
+.notification--status--date{
+  font-size: 12px;
+}
+.btn-confirm{
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0 20px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #00a01b;
+  color: #00a01b;
+  transition: all 0.3s linear;
+}
+.btn-confirm:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #00a01b;
+}
+.paging{
+  position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-btn{
+    margin: 10px;
+    padding: 7px 10px 7px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 2px solid #00bff1;
+    transition: all 0.3s linear;
+  }
+  .page-btn:hover{
+    text-decoration: none;
+    background-color: #00bff1;
+    color: #ffffff;
+  }

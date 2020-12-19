@@ -1,0 +1,23 @@
+{% extends "home/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'home/css/about.css'%}">
+{% endblock link %}
+
+{% block content %}
+   <div class="form">
+         <div class="form-title"> About Admin </div>
+         <div class="form-image">
+            <img src="{% static 'home/ProfilePic.jpg' %}" alt="No image">
+         </div>
+         <div class="form-desc">
+            <h1><span>Name:</span>  MD. SOZIB HOSSAIN </h1>
+            <h2><span>Study At:</span>  RAJSHAHI UNIVERSITY OF ENGINEERING AND TECHNOLOGY </h2>
+            <h2><span>Department:</span> Computer Science and  Engineering</h2>
+            <h2><span>Roll:</span> 1603039 </h2>
+            <h2><span>Session:</span> 2016-2017 </h2>
+         </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,84 @@
+.form {
+  position: relative;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  margin: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.form {
+  min-height: 600px;
+}
+
+.form .info {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 50px 10px 20px 200px;
+  background-color: rgba(32, 27, 34, 0.9);
+}
+
+.form .info img {
+  padding: 50px;
+  height: 300px;
+}
+
+.form .info h1 {
+  color: #ededed;
+  margin: 2px;
+  font-family: "Andika New Basic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form .info h1 span {
+  color: #87b748;
+}
+
+.form h1 {
+  margin: 50px 0px 5px 0px;
+  font-size: 25px;
+  color: #d49625;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+
+.form .m-form {
+  width: 100%;
+  padding: 10px 50px 20px 50px;
+  background-color: rgba(32, 27, 34, 0.5);
+}
+
+.form .m-form .btn-update {
+  color: #87b748;
+  border: 2px solid #87b748;
+  margin: -0px;
+}
+
+.form .m-form .btn-update:hover {
+  color: #ededed;
+  background-color: #87b748;
+}

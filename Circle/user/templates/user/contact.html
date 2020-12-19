@@ -1,0 +1,21 @@
+{% extends "home/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'user/css/contact.css' %}">
+{% endblock link %}
+
+{% block content %}
+    <div class="form">
+        <h1>Contact Us</h1>
+        <div class="m-form">
+            <h1>mail me:  sozibruet99@gmail.com</h1>
+            <h1>call me:  01771905794</h1>
+            <a href="#">Facebook.com</a>
+            <a href="#">Linkedin.com</a>
+            <a href="#">Github.com</a>
+        </div>
+
+    </div>
+{% endblock content %}

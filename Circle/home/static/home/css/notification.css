@@ -1,0 +1,104 @@
+.form {
+  position: relative;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.paging {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.paging .page-btn {
+  margin: 10px;
+  padding: 3px 5px 3px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+}
+
+.paging .page-btn:hover {
+  text-decoration: none;
+  background-color: #ededed;
+  color: #2f435e;
+}
+
+.paging .btn-active {
+  text-decoration: none;
+  background-color: #ededed;
+  color: #2f435e;
+}
+
+.btn {
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  margin: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.notification-box {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.notification-box .notification {
+  width: 600px;
+  height: 150px;
+  margin: 20px;
+  padding: 10px 10px 10px 50px;
+  background-color: rgba(32, 27, 34, 0.9);
+}
+
+.notification-box .notification-title {
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  color: #ededed;
+}
+
+.notification-box .notification .btn-confirm {
+  margin-left: -0px;
+  color: #87b748;
+  border: 2px solid #87b748;
+}
+
+.notification-box .notification .btn-confirm:hover {
+  color: #ededed;
+  background-color: #87b748;
+}

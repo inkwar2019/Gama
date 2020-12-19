@@ -1,0 +1,21 @@
+{% extends "home/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'home/post_detail.css' %}">
+{% endblock link %}
+
+{% block content %}
+    <div class="form-container">
+        <form method="POST">
+            {% csrf_token %}
+            <h1> Are you sure you want to delete "{{ object.title }}" Post ?</h1>
+            
+            <div class="form-options">
+                <button class="form-btn btn-delete" type="submit">Delete</button>
+                <a class="form-btn btn-update" href="{% url 'post-detail' object.pk %}"> Cancel </a>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

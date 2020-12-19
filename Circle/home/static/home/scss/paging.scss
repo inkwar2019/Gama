@@ -1,0 +1,28 @@
+.paging {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    .page-btn {
+        margin: 10px;
+        padding: 3px 5px 3px 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: transparent;
+        border: 1px solid $text-color;
+        border-radius: 3px;
+        transition: all 0.3s linear;
+        &:hover {
+            text-decoration: none;
+            background-color: $text-color;
+            color: $primary-color;
+        }
+    }
+    .btn-active {
+        text-decoration: none;
+        background-color: $text-color;
+        color: $primary-color;
+    }
+}

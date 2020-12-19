@@ -1,0 +1,54 @@
+@import 'home/scss/colors';
+@import 'home/scss/fonts';
+@import 'home/scss/sizes';
+@import 'home/scss/forms';
+@import 'home/scss/buttons';
+
+.form {
+    min-height: 600px;
+    .info {
+        width: 700px;
+        height: 500px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 50px 10px 20px 200px;
+        background-color: rgba($primary-color-dark,0.9);
+        img {
+            padding: 50px;
+            height: 300px;
+        }
+        h1 {
+            color: $text-color;
+            margin: 2px;
+            font-family: $article-font;
+            font-size: $article-size;
+            font-weight: 400;
+            span {
+                color: $success-color;
+            }
+        }
+    }
+    h1 {
+        margin: 50px 0px 5px 0px;
+        font-size: $sub-heading-size;
+        color: $highlight-color;
+        font-family: $heading-font;
+        letter-spacing: 1.5px;
+        font-weight: 800;
+    }
+    .m-form {
+        width: 100%;
+        padding: 10px 50px 20px 50px;
+        background-color: rgba($primary-color-dark,0.5);
+        .btn-update {
+            color: $success-color;
+            border:2px solid $success-color;
+            margin: -0px;
+            &:hover {
+                color: $text-color;
+                background-color: $success-color;
+            }
+        }
+    }
+}

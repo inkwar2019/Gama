@@ -1,0 +1,43 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'home/css/notification.css' %}">
+{% endblock link %}
+
+
+{% block content %}
+        <div class="title">Notifications</div>
+        <div class="notification-box">
+            {% for notification in notifications %}
+                {% if notification.owner == user %}
+                    <div class="notification">
+                        <h1 class="notification-title">{{ notification.title }}</h1>
+                        <div>Post:<a href="{% url 'post-detail' notification.post.id %}">{{ notification.post }}</a> </div>
+                        <div class="notification-body">
+                            <div class="notification--status">
+                                <div class="notification--status--date">{{ notification.date|date:"F d, Y" }}</div>
+                            </div>
+                        </div>
+                        {% if user == notification.post.author and notification.confirmed %}
+                            <a href="{% url 'confirming' notification.id %}" class="btn btn-confirm">confirm</a>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="paging">
+                {% if is_paginated %}
+                    {% if page_obj.has_previous %}
+                        <a class="page-btn" href="?page=1">First page</a>
+                        <a class="page-btn" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                    {% endif %}
+                    <a class="page-btn btn-active" href="?page={{ page_obj.number }}">{{ page_obj.number }}</a>
+                    {% if page_obj.has_next %}
+                        <a class="page-btn" href="?page={{ page_obj.next_page_number }}">Next</a>
+                        <a class="page-btn" href="?page={{ page_obj.paginator.num_pages }}">Last page</a>
+                    {% endif %}
+                {% endif %}
+        </div>
+
+{% endblock content %}

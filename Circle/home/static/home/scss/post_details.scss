@@ -1,0 +1,58 @@
+@import 'colors';
+@import 'fonts';
+@import 'sizes';
+@import 'buttons';
+@import 'forms';
+
+.form {
+    &-title {
+        margin: 30px;
+        font-size: $heading-size;
+        font-family: $heading-font;
+        color: #ffffff;
+    }
+    &-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        img {
+            height: 300px;
+        }
+    }
+    &-desc {
+        padding: 20px;
+        font-size: $article-size;
+        font-family: $article-font;
+        background-color: rgba($primary-color-dark,0.9);
+    }
+    &-price {
+        font-size: $small-text;
+        font-family: $article-font;
+        color: $highlight-color;
+    }
+    &-options {
+        display: flex;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.btn-danger {
+    border: 2px solid $danger-color;
+    color: $danger-color;
+    &:hover {
+        color: $text-color;
+        background-color: $danger-color;
+    }
+}
+.btn-update {
+    border: 2px solid $success-color;
+    color: $success-color;
+    &:hover {
+        color: $text-color;
+        background-color: $success-color;
+    }
+}

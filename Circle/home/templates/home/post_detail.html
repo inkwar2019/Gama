@@ -1,0 +1,28 @@
+{% extends "home/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'home/css/post_detail.css'%}">
+{% endblock link %}
+
+{% block content %}
+   <div class="form">
+         <div class="form-title"> {{ object.title }} ({{post.author}})</div>
+         <div class="form-title">{{post.date}}</div>
+         <div class="form-image">
+            <img src="{{ post.image.url }}" alt="No image">
+         </div>
+         <div class="form-desc"> {{ object.body }} </div>
+         <div class="form-price"> {{ object.price }}<span> &#2547;</span> (-{{ object.discount }}%)</div>
+   
+        <div class="form-options">
+            {% if object.author == user %}
+                <a class="btn btn-update" href="{% url 'post-update' object.pk %}">Update</a>
+                <a class="btn btn-danger" href="{% url 'post-delete' object.pk %}">Delete</a>
+            {% elif  user.is_authenticated and  object.author != user %}
+                <a class="btn btn-update" href="{% url 'loading' object.pk %}">Request for buy</a>
+            {% endif %}
+         </div>
+    </div>
+{% endblock content %}

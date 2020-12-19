@@ -1,0 +1,32 @@
+.form-container
+{
+    position: relative;
+    width: 60%;
+    left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    background-color: #00bff1;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-container h1{
+    font-size: 25px;
+    color: #000000;
+}
+.form-container .form h1{
+    font-size: 16px;
+    color: #000000;
+}

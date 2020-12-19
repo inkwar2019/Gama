@@ -1,0 +1,22 @@
+@import 'colors';
+@import 'fonts';
+@import 'sizes';
+@import 'buttons';
+@import 'forms';
+
+.form {
+    min-height: 600px;
+    .m-form {
+        width: 100%;
+        .btn-create {
+            margin-left: -0px;
+            border: 2px solid $success-color;
+            color: $success-color;
+            &:hover {
+                color: $text-color;
+                background-color: $success-color;
+            }
+        }
+    }
+    
+}

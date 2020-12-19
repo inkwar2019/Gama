@@ -1,0 +1,13 @@
+.btn {
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    margin: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background: transparent;
+    transition: all 0.3s linear;
+    &:hover {
+        text-decoration: none;
+    }
+}

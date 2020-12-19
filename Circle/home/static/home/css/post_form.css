@@ -1,0 +1,46 @@
+.btn {
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  margin: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.form {
+  position: relative;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  min-height: 600px;
+}
+
+.form .m-form {
+  width: 100%;
+}
+
+.form .m-form .btn-create {
+  margin-left: -0px;
+  border: 2px solid #87b748;
+  color: #87b748;
+}
+
+.form .m-form .btn-create:hover {
+  color: #ededed;
+  background-color: #87b748;
+}

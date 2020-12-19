@@ -1,0 +1,26 @@
+{% extends "home/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'user/css/profile.css' %}">
+{% endblock link %}
+
+{% block content %}
+   <div class="form">
+        <div class="info">
+            <h1><span> Username:</span> {{ user.username }} </h1>
+            <h1><span> E-Mail:</span>  {{ user.email }} </h1>
+            <h1><span> Phone Number:</span>  {{ user.profile.p_number }} </h1>
+            <h1><span>Department of {{ user.profile.department }},{{ user.profile.year }} year {{ user.profile.semister }} semister</span> </h1>
+            <img src="{{ user.profile.image.url }}" alt="No image">
+        </div>
+        <h1> Update your info </h1>
+        <form class="m-form" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ u_form|crispy }}
+            {{ p_form|crispy }}
+            <button class="btn btn-update" type="submit">Update</button>
+        </form>
+    </div>
+{% endblock content %}

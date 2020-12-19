@@ -1,0 +1,22 @@
+@import 'home/scss/colors';
+@import 'home/scss/fonts';
+@import 'home/scss/sizes';
+@import 'home/scss/forms';
+@import 'home/scss/buttons';
+
+.form {
+    min-height: 600px;
+    h1 {
+        width: 100%;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: $highlight-color;
+            transition: all 0.1s linear;
+            &:hover {
+                text-decoration: none;
+                text-shadow: 0 0 5px $highlight-color;
+            }
+        }
+    }
+}

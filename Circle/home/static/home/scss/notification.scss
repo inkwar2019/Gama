@@ -1,0 +1,47 @@
+@import 'colors';
+@import 'fonts';
+@import 'sizes';
+@import 'forms';
+@import 'paging';
+@import 'buttons';
+
+.title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: $heading-font;
+    letter-spacing: 2px;
+    font-size: $heading-size;
+    font-weight: 800;
+}
+
+.notification-box {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    .notification{
+        width: 600px;
+        height: 150px;
+        margin: 20px;
+        padding: 10px 10px 10px 50px;
+        background-color: rgba($primary-color-dark,0.9);
+        &-title {
+            font-size: $sub-heading-size;
+            font-family: $heading-font;
+            color: $text-color;
+        }
+        .btn-confirm {
+            margin-left: -0px;
+            color: $success-color;
+            border :2px solid $success-color;
+            &:hover {
+                color : $text-color;
+                background-color: $success-color;
+            }
+        }
+    }
+}

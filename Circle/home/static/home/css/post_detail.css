@@ -1,0 +1,86 @@
+.btn {
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+  margin: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.form {
+  position: relative;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-title {
+  margin: 30px;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+}
+
+.form-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.form-image img {
+  height: 300px;
+}
+
+.form-desc {
+  padding: 20px;
+  font-size: 14px;
+  font-family: "Andika New Basic", sans-serif;
+  background-color: rgba(32, 27, 34, 0.9);
+}
+
+.form-price {
+  font-size: 12px;
+  font-family: "Andika New Basic", sans-serif;
+  color: #d49625;
+}
+
+.form-options {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-danger {
+  border: 2px solid #c73237;
+  color: #c73237;
+}
+
+.btn-danger:hover {
+  color: #ededed;
+  background-color: #c73237;
+}
+
+.btn-update {
+  border: 2px solid #87b748;
+  color: #87b748;
+}
+
+.btn-update:hover {
+  color: #ededed;
+  background-color: #87b748;
+}

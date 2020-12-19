@@ -1,0 +1,17 @@
+{% extends "home/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'user/css/support.css' %}">
+{% endblock link %}
+
+{% block content %}
+    <div class="form">
+        <form class="m-form" method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button class="btn btn-answer" type="submit">submit Your Answer</button>
+        </form>
+    </div>
+{% endblock content %}
